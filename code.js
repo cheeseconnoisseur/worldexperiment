@@ -6,7 +6,7 @@ var mapi;
 //var wid = window.innerWidth;
 //var hei = window.innerHeight;
 var wid = 1024;
-var hei = 512;
+var hei = innerHeight;
 var zoomlevel = 1;
 
 var centerlat = 0;
@@ -79,12 +79,12 @@ function setup() {
 
 
     var col = map(scalecol, 0, 10 , 0 , 255)
-    var d = map(scale, 0 ,magmax , 0 , 1000);
+    var d = map(scale, 0 ,180 , 0 , 7);
     //var d = map(scale, 0, 10, 0, 180);
     //stroke(255,0,0);
 
     //fill(255,0,0,200);
-    fill(col,col,col,300);
+    fill(col,col,col,200);
     ellipse(x,y,d,d);
   }
 
